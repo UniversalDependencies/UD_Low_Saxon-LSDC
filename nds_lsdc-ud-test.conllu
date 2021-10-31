@@ -1271,3 +1271,4 @@
 45	de	de	DET	_	Case=Dat|Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	det	_	Case[regional]=Acc|lemma[gml]=dê¹
 46	stad	stad	NOUN	_	Case=Dat|Gender=Fem|Number=Sing	43	obl	_	Case[regional]=Acc|lemma[gml]=stat⁴|SpaceAfter=No
 47	.	.	PUNCT	_	_	8	punct	_	_
+
