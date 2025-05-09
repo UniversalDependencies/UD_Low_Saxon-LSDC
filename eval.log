@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_Low_Saxon-LSDC:
-commit 0b96be73a5ed2fb07e65fc9c9dce7572aecc9cda
-Merge: 31bb205 98aaec2
+commit b334bb981bcc31b1805b8361cd2eb30a0d9e9bb1
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Mon Nov 11 16:12:44 2024 +0100
 Size: counted 22639 of 22639 words (nodes).
 Size: min(0, log((N/1000)**2)) = 6.23934816549634.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,25 +20,36 @@ Features: source of annotation (from README) factor is 1.
 Universal relations: 35 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 1.
 Udapi:
-               TOTAL       1800
-Udapi: found 1800 bugs.
+               TOTAL       1757
+Udapi: found 1757 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 22639 words.
-Genres: found 2 out of 17 known.
+Genres: found 2 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang nds --max-err=10 UD_Low_Saxon-LSDC/nds_lsdc-ud-test.conllu
-[Line 10872 Sent LSDC_0410_NWF_20XX_ACH_achterhooksk_lange-afstands-romantiek Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:wat:det --> 4:heyl:amod)
-Warnings: 1
-*** PASSED ***
+[Line 4050 Sent LSDC_0125_DNS_1921_HAM_hamborg_de_rode_unnerrock Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'wat en' does not have the 'ExtPos' feature
+[Line 6365 Sent LSDC_0227_NWF_1868_OVY_zwolle_hoe_andries_aan_een_varken_kwam Node 37]: [L3 Warning fixed-without-extpos] Fixed expression 'as dat' does not have the 'ExtPos' feature
+[Line 6724 Sent LSDC_0238_NNS_1872_GRO_gronningen_n_oetmiening_ien_n_jachtwaide Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'vöär dat' does not have the 'ExtPos' feature
+[Line 7099 Sent LSDC_0252_NWF_2017_TWE_twentsk_bestuurproat-meert-2017 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'in plaats van' does not have the 'ExtPos' feature
+[Line 7654 Sent LSDC_0273_NWF_20XX_DRE_drentsk_23_In_de_steek_laoten Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'vöär dat' does not have the 'ExtPos' feature
+[Line 10872 Sent LSDC_0410_NWF_20XX_ACH_achterhooksk_lange-afstands-romantiek Node 5]: [L3 Syntax leaf-det] 'det' not expected to have children (5:wat:det --> 4:heyl:amod)
+[Line 11483 Sent LSDC_0436_DNS_1907_HOL_holsteynsk_maren Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'Hold stop' does not have the 'ExtPos' feature
+Syntax errors: 1
+Warnings: 6
+*** FAILED *** with 1 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang nds --max-err=10 UD_Low_Saxon-LSDC/nds_lsdc-ud-train.conllu
+[Line 3741 Sent LSDC_0649_DWF_<1879_SUD_suderlandsk_johann-friedrich-leopold-woeste_daunlots-23 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'holla he' does not have the 'ExtPos' feature
+[Line 11438 Sent LSDC_0929_OFL_1882_oustfalen_celle_de_buer_ut_gassen Node 22]: [L3 Warning fixed-without-extpos] Fixed expression 'lyke uut' does not have the 'ExtPos' feature
+Warnings: 2
 *** PASSED ***
-Validity: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=1) = 0.0769230769230769
-(weight=0.0769230769230769) * (score{genres}=0.117647058823529) = 0.00904977375565611
+(weight=0.0769230769230769) * (score{genres}=0.111111111111111) = 0.00854700854700855
 (weight=0.0769230769230769) * (score{lemmas}=1) = 0.0769230769230769
 (weight=0.256410256410256) * (score{size}=0.451619079824706) = 0.115799764057617
 (weight=0.0512820512820513) * (score{split}=0.67) = 0.0343589743589744
 (weight=0.0769230769230769) * (score{tags}=0.941176470588235) = 0.0723981900452489
-(weight=0.307692307692308) * (score{udapi}=0.204911877733115) = 0.0630498085332663
+(weight=0.307692307692308) * (score{udapi}=0.223905649542824) = 0.0688940460131767
 (weight=0.0769230769230769) * (score{udeprels}=0.945945945945946) = 0.0727650727650728
-(TOTAL score=0.521267737361989) * (availability=1) * (validity=1) = 0.521267737361989
-STARS = 2.5
-UD_Low_Saxon-LSDC	0.521267737361989	2.5
+(TOTAL score=0.526609209633252) * (availability=1) * (validity=0.01) = 0.00526609209633252
+STARS = 0
+UD_Low_Saxon-LSDC	0.00526609209633252	0
