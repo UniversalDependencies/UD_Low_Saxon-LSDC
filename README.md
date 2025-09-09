@@ -67,6 +67,7 @@ If you use this treebank, please cite this paper:
 Data available since: UD v2.8
 License: CC BY-SA 4.0
 Includes text: yes
+Parallel: no
 Genre: fiction nonfiction
 Lemmas: manual native
 UPOS: manual native
